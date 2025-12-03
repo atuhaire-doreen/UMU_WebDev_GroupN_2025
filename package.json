@@ -1,0 +1,23 @@
+{
+  "name": "umu_webdev_groupn_2025",
+  "version": "1.0.0",
+  "description": "ATUHAIRE DOREEN 2025-B291-11606\r NAKIRYA LEATICIA 2025-B071-14060\r KAFUMBE CALVIN ANDREW 2025-B071-10077",
+  "homepage": "https://github.com/atuhaire-doreen/UMU_WebDev_GroupN_2025#readme",
+  "bugs": {
+    "url": "https://github.com/atuhaire-doreen/UMU_WebDev_GroupN_2025/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atuhaire-doreen/UMU_WebDev_GroupN_2025.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
