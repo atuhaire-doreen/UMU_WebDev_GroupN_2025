@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla Palace</title>`
-    <link href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/css/main.min.css" rel="stylesheet">
+    <title>Table Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-xxl">
-            <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-secondary">Vanilla Palace</span>
-            </a>
-            <!-- toggle button for mobile nav -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span>
-            </button>
-        </div>
 
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/pages/about_us.html"
-                        class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/pages/gallery.html"
-                        class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/pages/menu.html"
-                        class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/pages/contact.html"
-                        class="nav-link">Contact</a>
-                </li>
-                <li>
-                    <a href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/pages/reservation.html"
-                        class="nav-link me-4">Reservation</a>
-                </li>
-            </ul>
+    <header class="top-header">
+        <h1> VANILLA PALACE Table Reservation</h1>
+        <p>Book a table with us for a great dining experience</p>
+    </header>
+
+    <section class="banner">
+        <img src="food-banner.avif" alt="Food Banner">
+    </section>
+
+    <section class="reservation-section">
+        <h2>Make a Reservation</h2>
+
+        <div id="error-box"></div>
+
+        <form id="reservation-form">
+            <label for="reservation-date">Select Date</label>
+            <input type="date" id="reservation-date">
+
+            <label for="reservation-time">Select Time</label>
+            <input type="time" id="reservation-time">
+
+            <label for="reservation-people">Number of People</label>
+            <input type="number" id="reservation-people" min="1">
+
+            <button type="submit" id="reserve-btn">Confirm Reservation</button>
+        </form>
+    </section>
+
+    <section class="events-section">
+        <h2>Special Events</h2>
+        <p>We host birthday dinners, executive business meetings, anniversary dinners and many more.</p>
+        <p><strong>Email:</strong> info@vanillapalacerestaurant.com</p>
+        <p><strong>Phone:</strong> +256 700 564 237 or +256 773 564 237</p>
+    </section>
+
+    <section class="policy-section">
+        <h2>Reservation Policy</h2>
+        <ul>
+            <li>Reservations left unpaid after 30 minutes are cancelled.</li>
+            <li>2 Free drinks for more than 5 people.</li>
+            <li>Children must be accompanied by adults.</li>
+            <li>Alcohol will not be served to persons under the age of 18.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Vanilla Palace Table Reservation. All Rights Reserved  </p>
+        <p>NANTALE LETICIA HOPE</p>
+        <p>2023-B401-10399</p>
+        <P>BIDE & Computer</P>
+    </footer>
+
+    <div id="popup">
+        <div class="popup-box">
+            <div id="popup-message"></div>
+            <button id="close-popup">Close</button>
         </div>
-    </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    </div>
+
+    <script src="reservation.js"></script>
 </body>
-
 </html>
