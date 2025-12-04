@@ -8,9 +8,9 @@
     <link href="https://atuhaire-doreen.github.io/UMU_WebDev_GroupN_2025/css/main.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-primary bg-opacity-10">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-secondary">Vanilla Palace</span>
@@ -85,13 +85,6 @@
                         <p>Perfect for family meals,dates and celebrations.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./images/index/chef.jpg" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Meet the Master Behind the Meals</h5>
-                        <p>Authentic flavors crafted with passion.</p>
-                    </div>
-                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -104,10 +97,91 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
     </div>
+    <section class="py-5 text-center">
+        <!-- Welcome Message Section -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 id="greeting" class="display-6 fw-bold text-secondary"></h2>
+                    <p class=" lead">Good food, good mood</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-secondary text-center mb-4">Opening Hours</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Monday - Friday</span>
+                            <strong>8:00 AM - 10:00 PM</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Saturday</span>
+                            <strong>9:00 AM - 11:00 PM</strong>
+                        </li>
+                    </ul>
+                </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-secondary text-center mb-4">Featured Dishes</h2>
+            <div class="row g-4">
+                <!-- Dish 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/index/dish1.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">A Classic Italian Pasta Dish</h5>
+                            <p class="card-text">Garnished with fresh parsley or basil and served as a light meal.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/index/dish2.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Classic Margherita Pizza</h5>
+                            <p class="card-text">Traditional pizza with fresh tomatoes, mozzarella, and basil.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/index/dish3.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Signature Spiced Carrot Cake</h5>
+                            <p class="card-text">A delectable slice of moist carrot cake, layered with a rich cream
+                                cheese frosting and elegantly garnished with a fresh physalis fruit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary text-center py-4">
+        <div class="container">
+            <p class="text-white fw-bold">KAFUMBE CALVIN ANDREW 2025-B071-10077</p>
+            <P class="text-white fw-bold">ATUHAIRE DOREEN 2025-B291-11606</P>
+            <p class="text-white fw-bold">NAMAJWALA DAISY 2023-B221-13336</p>
+            <p class="text-white fw-bold">NAKAAYI SANDRA 2025-B221-10679</p>
+            <p class="text-white fw-bold">NANTALE LETICIA HOPE 2023-B401-10399</p>
+            <P class="text-white fw-bold">NAKIRYA LEATICIA 2025-B071-14060</P>
+        </div>
+    </footer>
+    <button id="backToTop" class="btn btn-danger" style="display: none; position: fixed; bottom: 20px; right: 20px;">
+        ↑ Top
+    </button>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
