@@ -1,0 +1,117 @@
+body{
+    background-color: papayawhip;
+    overflow: hidde;
+
+}
+.container{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    display: flex;
+    border-radius: 5px;
+    box-shadow:4px 4px  14px 14px rgb(27, 23, 23);
+    overflow: hidden;
+    flex-direction: column;
+    background-color: rgb(127, 92, 92);
+    width: 450px;
+    height: 350px; 
+    margin: 5%;
+    
+}
+
+
+.OURVISSION{
+    display: flex;
+border-radius: 20px;
+box-shadow: 0px 4px 14px;
+overflow: hidden;
+flex-direction: column;
+background-color: white;
+width: 200px;
+gap: 20px;
+
+
+}.content{
+    text-align: center;
+}
+
+.navlinks{
+      background: #2e8b57;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    flex-direction: row;
+    font-size: 50px;
+    list-style: row;
+    
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    background-color: #6C0102;
+    padding: 10px 10px;
+    border-radius: 40px;
+    
+
+}
+.nav span{
+    position: absolute;
+    top:0;
+    left:0 ;
+    width:95px;
+    height: 100px;
+    background:linear-gradient(45deg,) ;
+}
+ul{
+    justify-content: flex-end;
+    display: flex;
+    width: 100px;
+    margin-right:40px ;
+}
+ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+}
+.footer{
+    background-color:#C0D6FF;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+h1:hover{
+    
+    transition:2s ;
+    transform: rotate(360deg);
+}
+
+.gallery{
+    display:flex;
+     gap:10px; 
+     justify-content: space-between;
+}
+
+.gallery:hover{
+    transition: 2s ease;
+    transform: rotateX(360deg);
+}
+img{
+    padding-top: 10px;
+    height: 300px ;
+    width:300px ;
+}
+.social-icons
