@@ -1,0 +1,411 @@
+/* ============================================
+   VANILLA PALACE RESTAURANT - MAIN STYLESHEET
+   Complete styling for responsive website
+   ============================================ */
+
+/* BASE & GLOBAL STYLES: Reset default margins, padding, and set responsive box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling: Light green background, readable font, and consistent line spacing */
+body {
+    background-color: rgb(170, 203, 192);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(17, 16, 16);
+    line-height: 1.6;
+}
+
+/* NAVIGATION COMPONENT: Sticky header bar with flexbox layout for responsive menu */
+.navbar {
+    /* Light blue background with shadow, stays at top while scrolling */
+    background-color: rgb(156, 214, 232);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    /* Restaurant logo/brand section - prevents shrinking */
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav-brand h3 {
+    /* Restaurant name heading - large, dark text, no line breaks */
+    color: rgb(17, 16, 16);
+    font-size: 1.8rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    /* Horizontal menu list with flexible wrapping for responsive design */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(32, 226, 236);
+    transform: translateY(-2px);
+}
+
+/*   TYPOGRAPHY & HEADINGS
+*/
+.section-title {
+    color: red;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FEE1D3;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*   FEATURES GRID COMPONENT
+*/
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/*   ORDER FORM COMPONENT
+*/
+.order-form {
+    background-color: #6C0102;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-form .section-title {
+    color: rgb(32, 226, 236);
+    background-color: transparent;
+    padding: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
+    border-bottom: 2px solid rgb(32, 226, 236);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.form-group label {
+    color: rgb(32, 226, 236);
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid rgb(32, 226, 236);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+    box-shadow: 0 0 8px rgba(32, 226, 236, 0.3);
+}
+
+.form-group.radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 120px;
+}
+
+.form-group input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(32, 226, 236);
+}
+
+.form-group input[type="radio"] + label {
+    margin: 0;
+    min-width: auto;
+    cursor: pointer;
+    color: rgb(32, 226, 236);
+}
+
+/*   BUTTON COMPONENT
+*/
+.order-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 226, 236);
+    border: 2px solid rgb(32, 226, 236);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-button:hover {
+    background-color: transparent;
+    color: rgb(32, 226, 236);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.order-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*   FOOTER COMPONENT
+*/
+footer {
+    background-color: rgb(156, 214, 232);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(17, 16, 16);
+}
+
+/*   RESPONSIVE DESIGN - TABLET (768px and below)
+*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.25rem;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        padding: 1.5rem 0.75rem;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 0.75rem;
+    }
+
+    .feature-card {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .order-form {
+        max-width: 90%;
+        padding: 1.5rem 1rem;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .form-group label {
+        min-width: auto;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        width: 100%;
+    }
+
+    .radio-option {
+        margin-left: 0;
+    }
+
+    .order-button {
+        width: 90%;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/*   RESPONSIVE DESIGN - MOBILE (480px and below)
+*/
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .nav-brand h3 {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        padding: 1rem 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .features-grid {
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1rem;
+    }
+
+    .feature-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    .order-form {
+        max-width: 95%;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .order-form .section-title {
+        font-size: 1.2rem;
+        padding: 0 0 0.75rem 0;
+        margin: 0 0 1rem 0;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+        padding: 0.6rem;
+        font-size: 16px;
+    }
+
+    .order-button {
+        width: 100%;
+        padding: 0.8rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 1.5rem 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

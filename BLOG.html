@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML Document for Vanilla Palace Restaurant - Restaurant website with navigation, feature showcase, and online ordering form -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Palace Restaurant</title>
+    <link rel="stylesheet" href="Blog.css">
+    <!-- Font Awesome icon library for decorative icons throughout the site -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR STARTS HERE -->
+    
+<nav class="navbar">
+  <!-- Restaurant brand/logo section on the left side of navbar -->
+  <div class="nav-brand">
+      <h3><i class="fas fa-utensils"></i> VANILLA PALACE RESTAURANT</h3>
+  </div>
+    <!-- Navigation menu links: Home, About, Gallery, Menu, Blog, Contact -->
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="index.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-images"></i> Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-list"></i> Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="BLOG.html"><i class="fas fa-blog"></i> Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+      </li>
+    </ul>
+</nav>
+    <!-- MAIN CONTENT SECTION -->
+    <div>
+      <!-- Section heading highlighting key qualities of the restaurant -->
+      <p class="section-title"><i class="fas fa-star"></i> QUALITIES AT VANILLA PALACE RESTAURANT</p>
+       
+        <!-- Grid container displaying three feature cards with food images and descriptions -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="images/burger.jpg" alt="Delicious Burgers">
+                <p><i class="fas fa-burger"></i> Burgers are one of the world's</p>
+                <p>most loved foods because</p>
+                <p>it is simple to prepare.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/rice.jpg" alt="Rice Dishes">
+                <p><i class="fas fa-bowl-rice"></i> We prepare foods for</p>
+                <p>all kinds of parties at</p>
+                <p>a bargainable price.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/luwombo.jpg" alt="Traditional Luwombo">
+                <p><i class="fas fa-leaf"></i> We provide local foods</p>
+                <p>from each and every part</p>
+                <p>of Uganda.</p>
+            </div>
+        </div>
+
+        <!-- ORDER FORM: Collects customer information (name, email, gender) for placing food orders -->
+        <form class="order-form">
+            <!-- Form title prompting users to enter details -->
+            <p class="section-title"><i class="fas fa-clipboard-list"></i> ENTER YOUR DETAILS TO ORDER NOW</p>
+            
+            <!-- Form field for customer's first name -->
+            <div class="form-group">
+                <label for="firstName"><i class="fas fa-user"></i> First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </div>
+
+            <!-- Form field for customer's last name -->
+            <div class="form-group">
+                <label for="lastName"><i class="fas fa-user"></i> Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+
+            <!-- Form field for customer's email address -->
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Radio buttons for customer to select their gender -->
+            <div class="form-group radio-group">
+                <label><i class="fas fa-venus-mars"></i> Gender:</label>
+                <div class="radio-option">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <!-- Submit button to place the order -->
+            <button type="submit" class="order-button">
+                <i class="fas fa-shopping-cart"></i> ORDER NOW
+            </button>
+        </form>
+
+        <!-- FOOTER: Copyright information and credits -->
+        <footer>
+            <p>&copy; 2025 KATO SHAFIC 2025-B071-10688 | All Rights Reserved</p>
+        </footer>
+    </div>
+    <!-- this connects the JavaScript file for form validation and interactivity -->
+    <script src="blog.js"></script>
+</body>
+</html>
