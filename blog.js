@@ -1,5 +1,6 @@
-/* 
-   Form validation and user interaction */
+/*
+   Form validation and user interaction
+*/
 
 // Form validation and submission handler
 // this prevents default form submission and checks all required fields before processing
@@ -27,16 +28,16 @@ orderForm.addEventListener('submit', function(event) {
         errors.push('Last name is required');
     }
 
-    // Regex pattern to check email format 
+    // Regex pattern to check email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // check email is not empty and matches email format
+    // Checks email is not empty and matches email format
     if (email === '') {
         errors.push('Email is required');
     } else if (!emailRegex.test(email)) {
         errors.push('Please enter a valid email address');
     }
 
-    // check that a gender option has been selected
+    // Checks that a gender option has been selected
     if (!gender) {
         errors.push('Please select a gender');
     }
